@@ -1,0 +1,427 @@
+@media(max-width:1100px){
+    .sidebar {
+        margin-left: 30px;
+        width: 237px;
+    }
+    .out {
+        margin-left: 0;
+    }
+    .elipse {
+        left: 199px;
+        top: 12px;
+    }
+    .arrow {
+        left: 214px;
+        top: 25px;
+    }
+    .main_statistics {
+        width: 900px;
+    }
+    .statistics_page {
+        margin: 98px 40px 18px 40px;
+        width: 720px;
+        height: 584px;
+    }
+    .grafics {
+        width: 525px;
+    }
+    .btn_grafics > button {
+        padding: 4px 7px;
+        font-size: 10px;
+    }
+    .prof_page{
+        width: 720px;
+        margin: 98px 40px 18px 40px;
+    } 
+    .main{
+        width: 900px;
+    }
+    .inputs {
+        margin: 12px;
+    }
+    .name_inputs {
+        font-size: 12px;
+    }
+    .name_inp {
+        height: 20px;
+        width: 300px;
+    }
+    .pasword_change{
+        height: 20px;
+        width: 300px;
+
+    }
+    .surname {
+        height: 20px;
+        width: 300px;
+    }
+    .login_change {
+        height: 20px;
+        width: 300px;
+    }
+    .btn_profile {
+        width: 316px;
+        margin: 26px 20px 33px 20px;
+    }
+}
+@media(max-width:978px){
+    .sidebar{
+        margin-left: 24px;
+        width: 200px;
+    }
+    .elipse {
+        left: 180px;
+    }
+    .arrow {
+        left: 195px;
+    }
+    .main {
+        width: 700px;
+    }
+    .prof_page {
+        width: 570px;
+        margin: 98px 30px 18px 30px;
+    }
+    .name_inp {
+        width: 250px;
+    }
+    .pasword_change {
+        width: 250px;
+    }
+    .surname {
+        width: 250px;
+    }
+    .login_change {
+    width: 250px;
+    }
+    .btn_profile {
+        width: 250px;
+        margin: 26px 20px 33px 26px;
+    }
+    .main_statistics {
+        width: 700px;
+    }
+    .statistics_page {
+        width: 570px;
+    }
+    .grafics {
+        width: 425px;
+    }
+    .btn_grafics > button {
+        width: 154px;
+        height: 39px;
+    }
+    .main_list {
+        width: 700px;
+    }
+}
+@media(max-width:768px){
+    .sidebar {
+        width: 150px;
+    }
+    .elipse {
+        left: 131px;
+    }
+    .arrow {
+        left: 144px;
+    }
+    .main {
+        width: 550px;
+    }
+    .prof_page {
+        width: 470px;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main_statistics {
+        width: 550px;
+    }
+    .statistics_page {
+        width: 470px;
+    }
+    .btn_grafics {
+        margin: 0 42px 0 27px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btn_grafics > button {
+        margin: 5px;
+    }
+    .main_list {
+        width: 550px;
+    }
+    .task {
+        font-size: 12px;
+    }
+    .text_input {
+        font-size: 12px;
+    }
+    .done{
+        font-size: 12px;
+    }
+    .done_checkbox+label::before {
+        width: 20px;
+        height: 20px;
+    }.done_checkbox_second+label::before {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media(max-width:540px){
+    .container_statistics {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        display: none;
+    }
+    .off_menu {
+        display: block;
+        position: relative;
+        height: 80px;
+        width: 500px;
+    }
+    .line_first{
+        position: absolute;
+        left: 22px;
+        top: 27px;
+    }
+    .line_second{
+        position: absolute;
+        left: 22px;
+        top: 35px;
+    }
+    .logo_menu{
+        position: absolute;
+        left: 100px;
+        top: 22px;
+    }
+    .main_statistics {
+        width: 500px;
+    }
+    .statistics_page {
+        width: 400px;
+    }
+    .grafics {
+        width: 325px;
+    }
+    .container_list {
+        display: flex;
+        flex-direction: column;
+    }
+    .main_list {
+        width: 540px;
+    }
+    
+    .list_page {
+        margin: 98px 56px 40px 48px;
+        height: 286px;
+    }
+    .container_profile {
+        display: flex;
+        flex-direction: column;
+    }
+    .prof_page {
+        width: 400px;
+    }
+    .name_inp {
+        width: 365px;
+    }
+    .pasword_change {
+        width: 365px;
+    }
+    .surname{
+        width: 365px;
+    }
+    .login_change {
+        width: 365px;
+    }
+}
+    @media(max-width:360px){
+        .off_menu {
+            height: 64px;
+            width: 360px;
+        }
+        .main {
+            width: 360px;
+        }
+        .prof_page {
+            margin: 72px 16px 0px 17px;
+            width: 328px;
+        }
+        .inputs {
+            width: 296px;
+            margin: 12px;
+        }
+        .name_inp {
+            width: 296px;
+        }
+        .pasword_change{
+            width: 296px;
+        }
+        .surname{
+            width: 296px;
+        }
+        .login_change{
+            width: 296px;
+        }
+        .btn_profile {
+            margin: 26px 16px 33px 16px;
+            width: 296px;
+        }
+        .save {
+            margin:0;
+            width: 296px;
+        }
+        .main_statistics {
+            width: 360px;
+            height: 400px;
+        }
+        .statistics_page {
+            width: 328px;
+            margin: 72px 16px 0 16px;
+            height: 89px;
+        }
+        .grafics {
+            display: none;
+        }
+        .btn_grafics {
+            display: none;
+        }
+        .no_statistic{
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #303136;
+          
+        }
+        .main_list {
+            width: 360px;
+            height: 600px;
+        }
+        .list_page {
+            margin:72px 16px 0 16px;
+            width: 328px;
+            height: 257px;
+        }
+        .task {
+            font-size: 14px;
+        }
+        .text_input {
+            font-size: 14px;
+        }
+        .done {
+            font-size: 14px;
+        }
+        hr{
+         margin: 16px;
+        }     
+    }
+    /* index */
+    @media(max-width:1100px){
+        .logo {
+            left: 504px;
+        }
+        .log {
+            left: 401px;
+        }
+        .password{
+            left: 401px;
+        }
+        .btn{
+            left: 401px;
+        }
+    }
+    @media(max-width:978px){
+        .logo {
+            left: 419px;
+        }
+        .log {
+            left: 325px;
+        }
+        .password{
+            left: 325px;
+        }
+        .btn{
+            left: 325px;
+        }
+    }
+    @media(max-width:768px){
+        .logo {
+            left: 305px;
+        }
+        .log {
+            left: 216px;
+        }
+        .password{
+            left: 216px;
+        }
+        .btn{
+            left: 216px;
+        }
+
+    }
+    @media(max-width:540px){
+        .logo {
+            left: 197px;
+        }
+        .log {
+            width: 296px;
+            left: 131px;
+        }
+        .password{
+            width: 296px;
+            left: 131px;
+        }
+        .btn{
+            width: 296px;
+            left: 131px;
+        }
+
+    }
+    @media(max-width:420px){
+        .logo {
+            left: 133px;
+        }
+        .log {
+            left: 56px;  
+        }
+        .password{
+            left: 56px;   
+        }
+        .btn{
+            left: 56px; 
+        }
+
+    }
+    @media(max-width:360px){
+        .logo {
+            width: 157px;
+            height: 40px;
+            left: 101px;
+            top: 146px;
+        }
+        .log {
+            width: 296px;
+            height: 44px;
+            left: 32px;
+            top: 246px;
+        }
+        .password{
+            width: 296px;
+            height: 44px;
+            left: 32px;
+            top: 306px;
+        }
+        .btn{
+            width: 296px;
+            height: 44px;
+            left: 32px;
+            top: 366px;
+        }
+
+    }
