@@ -34,8 +34,8 @@
         <div class="btn_grafics">
           <button @click="getRandomChartData">Случайные данные</button>
           <button>Добавить данные</button>
-          <button>Удалить данные</button>
-          <button>Увеличить кол-во данных</button>
+          <button @click="deleteChartData">Удалить данные</button>
+          <button @click="addChartData">Увеличить кол-во данных</button>
           <button @click="removeChartData">Уменьшить кол-во данных</button>
         </div>
         <div class="no_statistic">
@@ -54,8 +54,9 @@ export default {
   components: {sidebar},
   data () {
     return {
-      chartData: [10, 50, 20, 100, 40, 60, 80],
-      labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль']
+      chartData: [10, 50, 20, 100, 40, 60, 80, 70, 30,
+      ],
+      labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь']
     }
   },
   methods: {
@@ -69,8 +70,35 @@ export default {
       this.chartData.pop()
       this.labels.pop()
      },
-        
-        
+     addChartData(){
+       this.chartData = this.chartData.map(() => this.getRandomArbitrary(1, 200));
+        switch(this.labels.length){
+          case 2:
+            this.labels.push('Март')
+          break
+          case 3:
+            this.labels.push('Апрель')
+          break
+          case 4:
+            this.labels.push('Май')
+          break
+          case 5:
+            this.labels.push('Июнь')
+          break
+          case 6:
+            this.labels.push('Июль')
+            break
+            case 7:
+              this.labels.push('Август')
+              break
+              case 8:
+                this.labels.push('Сентябрь')
+                break
+        }
+     },
+     deleteChartData(){
+       this.chartData = []
+     }
       
     }
     

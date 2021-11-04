@@ -303,7 +303,7 @@
     justify-content: space-between;
 }
 .text_task{
-    margin: 0 44px 0 40px;
+    margin: 0 44px 15px 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -316,71 +316,20 @@
     color: #303136;
 }
 .done{
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #C2C2C2;
 }
-.done_checkbox{
-    position:absolute;
-    z-index: -1;
-    opacity: 0;
-}
 .done_checkbox+label{
-    display: inline-flex;
+    margin-left: 10px;
     align-items: center;
     user-select: none;
-}
-.done_checkbox+label::before{
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #BABABA;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-    margin-right: 7px; 
-    
-}
-.done_checkbox:checked+label::before{
-    background-image: url('img/list/Union.jpg');
-    
-}
-.done_checkbox_second{
-    position:absolute;
-    z-index: -1;
-    opacity: 0;
-}
-.done_checkbox_second+label{
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-}
-.done_checkbox_second+label::before{
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #BABABA;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-    margin-right: 7px; 
-}
-.done_checkbox_second:checked+label::before{
-    background-image: url('img/list/Union.jpg');
 }
 hr{
-    margin: 16px 44px 16px 40px;
+    margin:10px 44px 15px 40px;
 }
-
 
 /* Statistics */
 .container_statistics{

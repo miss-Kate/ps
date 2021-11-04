@@ -13,22 +13,15 @@
           <div>Статус</div>
         </div>
         <hr>
-        <div class="text_task">
-          <input class="text_input" type="text" placeholder="Текст задачи">
+        <div v-for="item in listTasks" :key="item.id" class="text_task">
+          <input class="text_input" type="text"  :value="item.title">
           <div class="done">
             <input class="done_checkbox" type="checkbox" id="done_checkbox" value="Выполнено">
             <label for="done_checkbox">Выполнено</label>
+            
           </div>
         </div>
-        <hr>
-        <div class="text_task">
-          <input  class="text_input" type="text" placeholder="Текст задачи">
-          <div class="done">
-            <input class="done_checkbox_second" type="checkbox" id="done_checkbox_second" value="Выполнено">
-            <label for="done_checkbox_second"> <span>Выполнено</span> </label>
-          </div>
-        </div>
-        <hr>
+        
       </div>
     </div>
   </div>
@@ -36,11 +29,20 @@
 
 <script>
 import sidebar from "../components/sidebar";
+import axios from "axios"
 export default {
   name: "list",
   components: {
     sidebar,
-  },  
+  },
+  data(){
+    return{
+      listTasks:[]
+    }
+  },
+  created(){
+    axios.get('https://my-json-server.typicode.com/typicode/demo/posts').then((responce)=>{this.listTasks=responce.data}) 
+  }
 }
 
 </script>
